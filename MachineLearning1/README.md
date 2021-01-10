@@ -92,3 +92,8 @@ eg) Logistic Regression, k-NN, Naive Bayes, Support Vector, Decision Tree ...
 
 ## 2021-01-08  
 ### 강화학습 (Reinforcement Learning)
+강화학습은 좋은 결과를 냈을 때 '상(Reward)'을 받고 그렇지 않은 경우에는 '벌(Punishment)'을 받는다. 비유를 하자면 게임으로 들 수 있다. 게이머가 게임을 할 때 점수가 높아지면 상을 받는 행위이고, 장애물에 부딪히면 벌을 받는 행위로 간주된다. 게이머는 이와같은 과정을 통해 어떤 상황에서 어떻게 행동해야 더 많은 상을 받고 더 적은 벌을 받을지 알게된다. 판단력이 강화된 것이다.  
+여기서 용어에 대해 또 알고 넘어가자면 게임은 환경(Enviornment)가 되고 게이머는 에이전트(Agent)가 된다. 게임의 상태는 상태(State), 게이머의 판단능력은 정책(Policy)가 된다. 게이머의 행동은 Action, 게이머에게 주어지는 보상은 Reward이다. 
+
+### 머신러닝 지도
+<img width="740" alt="스크린샷 2021-01-10 오후 8 00 57" src="https://user-images.githubusercontent.com/32003817/104121032-b3a74280-537e-11eb-8d56-2b1936cb1e2b.png">
