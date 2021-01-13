@@ -34,3 +34,21 @@ jupyter notebook의 웹 버전이라고 생각하면 된다. 구글 드라이브
 4. 컬럼 이름 출력하기 : df.columns  
 5. 맨 위의 5개 데이터 출력하기 : df.head()
 6. 맨 아래의 5개 데이터 출력하기 : df.tail()  
+
+### 레모네이드 판매 예측
+이번 시간에는 앞에서 다뤘던 지도학습의 빅픽쳐 내용을 사용하여 신경망의 가장 작은 단위인 뉴런을 코드로 구현해본다.  
+
+```
+# 독립변수가 하나이므로 shape에 [1]
+X = tf.keras.layers.Input(shape=[1])
+
+# 종속변수가 하나이므로 Dense의 인자에 1
+Y = tf.keras.layers.Dense(1)(X)
+```  
+
+```
+# epochs는 전체데이터를 몇번 학습시킬 것인지를 의미한다. (한번에 학습되기는 어렵기 때문)
+model.fit(x=lemonade_independent_variable, y=lemonade_dependent_variable, epochs=1000)
+```  
+
+### 손실의 의미
