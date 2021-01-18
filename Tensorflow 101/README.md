@@ -77,3 +77,17 @@ loss = (실제정답 - 예측치)^2 의 평균으로 정의된다.
 그렇다면 종속변수가 2개인 경우는 어떨까? 위 그림에서 보면 독립변수가 12개 종속변수가 2개인 상황이다. 종속변수가 2개이므로 모델(방정식) 또한 2개가 나올 것이고, 퍼셉트론이 병렬적으로 연결되어 있다고 생각할 수 있다.  
 
 ## 2021-01-16
+### 학습의 실제  
+W에 dt(step size)만큼 더하고 Loss값의 변화를 관찰하자. Loss가 늘어난 경우 W에 dt값을 빼는 방향으로 결정해야하고 줄어든 경우에는 dt값을 더하는 방향으로 유지하면 된다. dLoss/dt는 Loss의 방향을 의미한다.
+mse = mean sqaure error, (예측 - 실제값)^2 의 평균  
+
+## 2021-01-19
+### 아이리스 품종 분류
+이전까지는 독립변수를 통해 추측한 종속변수는 수치 데이터이므로 regression를 사용했다. 하지만 아이리스 품종 분류의 종속변수는 품종을 구분하는 클래스이므로 classification을 해야한다. 즉, Softmax Regression을 통해 나온 k차원의 벡터를 One-Hot Encoding을 통해 각 클래스를 1과 0으로 표현한다.  
+
+e.g) 4개의 독립변수와 3개의 클래스가 존재하고, 배치사이즈가 1일때..  
+이 경우 입력이 4차원의 벡터일 것이다.(독립변수의 갯수만큼) 그러나 아웃풋은 3차원의 벡터(이를테면 [0.01 0.05, 0.04])형식일텐데 어떻게 하지요? 각 독립변수에 가중치곱을 하면 된다.  
+
+<img width="310" alt="image" src="https://user-images.githubusercontent.com/32003817/104968998-bd8a0f00-5a2a-11eb-8dbc-31aa30ee487a.png">  
+
+참고 : Regression의 Loss function은 MSE, Classification의 Loss function은 Cross Entropy
