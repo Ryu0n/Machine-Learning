@@ -90,4 +90,5 @@ e.g) 4개의 독립변수와 3개의 클래스가 존재하고, 배치사이즈�
 
 <img width="310" alt="image" src="https://user-images.githubusercontent.com/32003817/104968998-bd8a0f00-5a2a-11eb-8dbc-31aa30ee487a.png">  
 
-참고 : Regression의 Loss function은 MSE, Classification의 Loss function은 Cross Entropy
+참고 : Regression의 Loss function은 MSE, Classification의 Loss function은 Cross Entropy  
+
